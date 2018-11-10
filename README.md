@@ -15,7 +15,7 @@ Every UI interaction between the player and the game is achieved by using MVC st
    - This is achieved by using MVC style and the Object-Oriented style. While MVC styles handle the selections from the player, the Object-Oriented style makes each tower can be in different condition (ie. different types, level)
 
  - The game will not end till a certain number of enemies have escaped to the exit.
-   - This is achieved by combining the Publish-Subscribe style and the Layered style. The enemy controller subscribes each enemy so that it will know if there are any enemies alive on the board. If there are no enemies anymore, the enemy controller will notify the game manager through a number layers, then game manager will give orders to other game components.
+   - This is achieved by combining the Publish-Subscribe style and the Layered style. The enemy controller subscribes each enemy so that it will know if there are any enemies alive on the board. If there are no enemies anymore, the enemy controller will notify the game manager through a number of layers, then the game manager will give orders to other game components.
 
 ## Non-functional Attributes:
  - Efficiency
@@ -60,7 +60,7 @@ Every UI interaction between the player and the game is achieved by using MVC st
    - Main benefits: Understandable, Reusable, Highly Cohesive.
 
  - MVC
-   - Tower Controller plays as Model. it stores actual tower prefabs. Tile Event Handler is controller,  it sends request to Tower Controller (Model) to create a tower object. Tower UI Panel represents View, it generates output message for each operation, and receive input operation request from a user. 
+   - Tower Controller plays as Model. it stores actual tower prefabs. Tile Event Handler is controller,  it sends requests to Tower Controller (Model) to create a tower object. Tower UI Panel represents View, it generates output message for each operation, and receive input operation request from a user. 
 
 ## Design:
 ### Core System Components:
