@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012688933106}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012688933106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000012531483860}
+  - component: {fileID: 114000010562447306}
+  m_Layer: 0
+  m_Name: EnemyController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012531483860
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012688933106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000010562447306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012688933106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c954f2b8d534f40b658344e80cc95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemies:
+  - {fileID: 1466172184782548, guid: d3d6dd486657da540a85ac5e99cab579, type: 2}
+  - {fileID: 1101588043741526, guid: 697817373cfaff045820510f41619458, type: 2}
+  - {fileID: 1245511874056754, guid: 8606b4081c55eec429828c2bb2c4af27, type: 2}
+  - {fileID: 1439478701907904, guid: 49752ef51aef0a44380a088cec3a2035, type: 2}
+  - {fileID: 1815168294201722, guid: d15b618b0b7b40c45a0ac1a1fcd21fd2, type: 2}
+  - {fileID: 1015295548897258, guid: cd149e1806232fb45929a843667e1021, type: 2}
+  - {fileID: 1934391892265438, guid: 201bfd6fbf30e2042a97dc7acdc506a1, type: 2}
+  EnemyNum: 5
+  DefaultNum: 0
+  Timer: 1
+
