@@ -5,17 +5,17 @@ A mobile tower defense game where you have the build towers to create a maze to 
 
 ## Functional Requirements:
 Every UI interaction between the player and the game is achieved by using MVC style (ie. Buttons, Inputs, Clicks). What’s below are functionalities which utilized special architectural styles.
- - Before starting the game, player can choose the difficult level (differed by number of enemies, gold income etc)
+ - Before starting the game, player can choose the difficulty level (differed by number of enemies, gold income etc)
    - This is achieved by using Blackboard style in game. Since all data are stored in game manager, it is simple to alter those properties and apply to game. 
 
  - Some enemies can fire to damage the towers.
-   - This functionality is achieved by combining the Publish Subscribe style and  the Pipe and Filter style. While the Publish Subscribe style realized the attack between towers and enemies, the Pipe and Filter style guaranteed an intellectual selection of target to attack for both tower and enemy.
+   - This functionality is achieved by combining the Publish Subscribe style and  the Pipe and Filter style. While the Publish-Subscribe style realized the attack between towers and enemies, the Pipe and Filter style guaranteed an intellectual selection of target to attack for both tower and enemy.
 
  - The player can also upgrade/repair/destroy the existing towers.
    - This is achieved by using MVC style and the Object-Oriented style. While MVC styles handle the selections from the player, the Object-Oriented style makes each tower can be in different condition (ie. different types, level)
 
  - The game will not end till a certain number of enemies have escaped to the exit.
-   - This is achieved by combining the Publish Subscribe style and the Layered style. The enemy controller subscribe each enemy so that it will know if there are any enemies alive on the board. If there are no enemies anymore, the enemy controller will notify the game manager through a number layers, then game manager will give orders to other game components.
+   - This is achieved by combining the Publish-Subscribe style and the Layered style. The enemy controller subscribes each enemy so that it will know if there are any enemies alive on the board. If there are no enemies anymore, the enemy controller will notify the game manager through a number layers, then game manager will give orders to other game components.
 
 ## Non-functional Attributes:
  - Efficiency
