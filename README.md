@@ -8,8 +8,8 @@ Every UI interaction between the player and the game is achieved by using MVC st
  - Before starting the game, player can choose the difficulty level (differed by number of enemies, gold income etc)
    -Using Blackboard style achieves the selection of the difficulty level. Since the game manager stores all the sorted data, altering those properties and apply to game is simple. 
 
- - Some enemies can fire to damage the towers.
-   - This functionality is achieved by combining the Publish Subscribe style and  the Pipe and Filter style. While the Publish-Subscribe style realized the attack between towers and enemies, the Pipe and Filter style guaranteed an intellectual selection of target to attack for both tower and enemy.
+ - Enemies can fire to damage the towers.
+   - Combining the Publish-Subscribe style and the Pipe and Filter style achieve this functionalty.When the Publish-Subscribe style realized the attack, the Pipe and Filter style guaranteed an intellectual selection of target to attack for both tower and enemy. 
 
  - The player can also upgrade/repair/destroy the existing towers.
    - This is achieved by using MVC style and the Object-Oriented style. While MVC styles handle the selections from the player, the Object-Oriented style makes each tower can be in different condition (ie. different types, level)
