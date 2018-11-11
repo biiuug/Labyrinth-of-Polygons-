@@ -1,6 +1,6 @@
 # Labyrinth of Polygons
 
-A mobile tower defense game where you have the build towers to create a maze to stop invaders from leaving your labyrinth.
+Labyrinth of Polygons is a mobile tower defense game. Players design a maze by building defensive towers to stop invaders from leaving your labyrinth.
 
 
 ## Functional Requirements:
