@@ -6,7 +6,7 @@ Labyrinth of Polygons is a mobile tower defense game. Players design a maze by b
 ## Functional Requirements:
 Every UI interaction between the player and the game is achieved by using MVC style (ie. Buttons, Inputs, Clicks). What’s below are functionalities which utilized special architectural styles.
  - Before starting the game, player can choose the difficulty level (differed by number of enemies, gold income etc)
-   - This is achieved by using Blackboard style in game. Since all data are stored in game manager, it is simple to alter those properties and apply to game. 
+   -The use of Blackboard style achieves the selection of the difficulty level. Since the game manager stores all the sorted data, altering those properties and apply to game is simple. 
 
  - Some enemies can fire to damage the towers.
    - This functionality is achieved by combining the Publish Subscribe style and  the Pipe and Filter style. While the Publish-Subscribe style realized the attack between towers and enemies, the Pipe and Filter style guaranteed an intellectual selection of target to attack for both tower and enemy.
