@@ -12,7 +12,7 @@ Every UI interaction between the player and the game is achieved by using MVC st
    - Combining the Publish-Subscribe style and the Pipe and Filter style achieve this functionalty.When the Publish-Subscribe style realized the attack, the Pipe and Filter style guaranteed an intellectual selection of target to attack for both tower and enemy. 
 
  - The player can also upgrade/repair/destroy the existing towers.
-   - This is achieved by using MVC style and the Object-Oriented style. While MVC styles handle the selections from the player, the Object-Oriented style makes each tower can be in different condition (ie. different types, level)
+   - This is achieved by using MVC style and the Object-Oriented style. The MVC styles handle the selections from the player When each tower has different condition by the Object-Oriented style.(ie. different types, level)
 
  - The game will not end till a certain number of enemies have escaped to the exit.
    - This is achieved by combining the Publish-Subscribe style and the Layered style. The enemy controller subscribes each enemy so that it will know if there are any enemies alive on the board. If there are no enemies anymore, the enemy controller will notify the game manager through a number of layers, then the game manager will give orders to other game components.
