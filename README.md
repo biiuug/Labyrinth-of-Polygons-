@@ -100,7 +100,7 @@ The tile object can be attached with different functionalities dynamically depen
 
 
 #### Towers:
-Purpose: Since the whole game is about tower defence, the tower is indeed the most significant part of it. The game support 5 various types of tower which are Tank Tower (taunt enemies hatred), Range Tower (low attack damage but long attack range), Slow Tower (slow nearby enemies), Heal Tower (heal nearby ally towers) and Gold Tower (generate golds). Each of these towers has its unique pros and cons, user needs to combine them properly to defend the base as long as possible.
+Purpose: Since the game is about tower defence, the tower plays a significant role. The game support 5 various types of tower which are Tank Tower (taunt enemies hatred), Range Tower (low attack damage but long attack range), Slow Tower (slow nearby enemies), Heal Tower (heal nearby ally towers) and Gold Tower (generate golds). Users should combine different towers properly to defend the base because Each type of tower has unique pros and cons.
 
 Iterator:
 Tower Controller uses Iterator design pattern to control tower game object (aka prefab). More specifically, there are total 5 different type of towers. These tower scripts and different initial variables are assigned into 5 different tower prefabs respectively. The Tower Controller does not need to know what these towers are capable of, it just provides a way to access this tower prefabs when the Tile Event Handler need them.
